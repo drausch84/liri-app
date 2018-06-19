@@ -25,12 +25,12 @@ var myTweets = function() {
   var client = new Twitter(keys.twitter);
 
   var params = {
-    screen_name: "ThatDuder",
-    count: 20
+    screen_name: "thatduder",
+    count: 5
   };
   client.get("statuses/user_timeline", params, function(error, tweets, response) {
     if (!error) {
-      for (var i = 0; i <20; i++) {
+      for (var i = 0; tweets.length; i++) {
         console.log("");
         console.log("-------------------");
         console.log("Created At: " + tweets[i].created_at);
@@ -57,7 +57,8 @@ var getArtistNames = function(artist) {
     spotify.search(
       {
         type: "track",
-        query: song
+        query: song,
+        limit: 5
       },
       function(err, data) {
         if (err) {
