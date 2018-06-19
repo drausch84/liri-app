@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/drausch84/liri-app/issues"
   },
-  "homepage": "https://github.com/drausch84/liri-app#readme"
+  "homepage": "https://github.com/drausch84/liri-app#readme",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "fs": "0.0.1-security",
+    "npm": "^6.1.0",
+    "twitter": "^1.7.1"
+  }
 }
